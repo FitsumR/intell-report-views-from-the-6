@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.flex-item {
+    width: 45%;
+}
+.flex-item img {
+    width: 100%;
+}
+.new-content {
+
+}
