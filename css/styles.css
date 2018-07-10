@@ -202,6 +202,29 @@ ul {
     justify-content: center;
 }
 
+.rap {
+    text-align: center;
+    padding: 0 auto;
+}
+
+.rap li {
+    text-align: left;
+
+}
+
+.rap h3 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgba(118, 118, 118, 0.906)
+}
+
+.cont1 {
+    background-color: rgba(118, 118, 118, 0.906);
+    padding: .6em;
+    border-radius: 10px;
+    margin-top: .2em;
+    box-shadow: black 5px 5px 5px;
+}
 .finance1 {
     background: rgb(165, 196, 140);
     margin: 20px;
