@@ -10,6 +10,7 @@ body {
     background-color: black;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 .wrapper {
@@ -133,13 +134,64 @@ header {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.534) 5px 5px 5px;
 }
-
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(63, 63, 63, 0.8);
+    padding: .4em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.9) 5px 5px 5px;
+    margin: .3em;
+}
+nav a {
+    text-decoration: none;
+    text-shadow: black .5px .5px;
+    color: rgba(118, 225, 229, 1);
+    background:
+        linear-gradient( 
+            rgba(43, 42, 64, 1),
+            rgba(43, 42, 64, .5),
+            rgba(43, 42, 64, 1)
+            );
+    padding: .5rem;
+    display: block;
+    border-radius: 5px;
+}
+nav a:hover {
+    color: rgba(43, 42, 64, 1);
+    background:
+        linear-gradient(
+            rgba(118, 225, 229, 1),
+            rgba(118, 225, 229, .5),
+            rgba(118, 225, 229, 1)
+            );
+}
 .rapsheet {
     background-color: rgba(118, 225, 229, .8);
 }
 
 .perp-details {
     padding: .5em;
+}
+.perp-details h3 {
+    font-size: 2em;
+    text-align: center;
+}
+.perp-details h4 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+.index-ul {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    padding: .6em;
+    color: rgba(118, 225, 229, 1);
+    border-radius: 5px;
+}
+.index-ul li {
+    list-style-type: square;
+    list-style-position: inside;
+    
 }
 
 ul {
