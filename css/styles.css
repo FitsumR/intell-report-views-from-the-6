@@ -10,7 +10,6 @@ body {
     background-color: black;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
 }
 
 .wrapper {
@@ -187,6 +186,7 @@ nav a:hover {
     padding: .6em;
     color: rgba(118, 225, 229, 1);
     border-radius: 5px;
+    text-shadow: ;
 }
 .index-ul li {
     list-style-type: square;
@@ -225,7 +225,7 @@ ul {
      color: white;
  }
 
-.news-container {
+ .news-container {
     height: 50em;
     padding: 5px;
     overflow-y:auto;
@@ -252,7 +252,6 @@ ul {
     align-items: center;
     justify-content: center;
 }
-
 .rap {
     text-align: center;
     padding: 0 auto;
