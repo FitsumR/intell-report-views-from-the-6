@@ -193,3 +193,10 @@ ul {
     align-items: center;
     justify-content: center;
 }
+
+.finance1 {
+    background: rgb(165, 196, 140);
+    margin: 20px;
+    padding: 20px;
+    border: 2px black solid;
+}
