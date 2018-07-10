@@ -52,7 +52,7 @@ header {
     border-radius: 10px;
 }
 
-h2 {
+.page-title {
     font-size: 3em;
     text-align: center;
     text-shadow: 
@@ -87,9 +87,12 @@ h2 {
     width: 100%;
 }
 
-.new-content {
+.rapsheet {
+    background-color: rgba(118, 225, 229, .8);
+
+    
 
 }
 ul {
-    list-style-type: none;
+    list-style-type: bullets ;
   }
