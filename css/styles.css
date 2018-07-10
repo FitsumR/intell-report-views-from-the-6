@@ -175,7 +175,9 @@ ul {
  }
 
 .news-container {
+    height: 50em;
     padding: 5px;
+    overflow-y:auto;
 }
 .news1 {
     background: lightgrey;
@@ -189,7 +191,7 @@ ul {
 .news1 p {
     text-align: justify;
 }
-.news1 footer {
+.news1 > footer {
     background: black;
     color: white;
     margin: 0px;
@@ -222,5 +224,10 @@ ul {
     border-radius: 10px;
     margin-top: .2em;
     box-shadow: black 5px 5px 5px;
-
+}
+.finance1 {
+    background: rgb(165, 196, 140);
+    margin: 20px;
+    padding: 20px;
+    border: 2px black solid;
 }
