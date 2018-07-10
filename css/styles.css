@@ -9,10 +9,52 @@ html {
 body {
     background-color: black;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-    background-color: rgb(206, 206, 206);
+    
+	background: radial-gradient( rgba(43, 42, 64, 1), rgba(118, 225, 229, 1));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 40s linear infinite alternate;
+	-moz-animation: Gradient 40s linear infinite alternate;
+	animation: Gradient 40s linear infinite alternate;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 header {
@@ -52,7 +94,7 @@ header {
     border-radius: 10px;
 }
 
-h2 {
+.page-title {
     font-size: 3em;
     text-align: center;
     text-shadow: 
@@ -68,7 +110,7 @@ h2 {
         0 5px 10px rgba(0,0,0,.25),
         0 10px 10px rgba(0,0,0,.2),
         0 20px 20px rgba(0,0,0,.15);
-    color: rgba(43, 42, 64, .9);
+    color: rgba(221, 221, 221, 0.9);
 }
 
 .flex-container {
@@ -80,16 +122,74 @@ h2 {
 
 .flex-item {
     width: 45%;
-    background: rgba(0, 0, 128, 0.521);
+    background: rgb(224, 224, 224);
+    margin: 1em;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, .7) 10px 10px 5px;
+    border-radius: 10px;
 }
 
 .flex-item img {
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.534) 5px 5px 5px;
+}
+.perp-details {
+    padding: .5em;
 }
 
-.new-content {
-
-}
 ul {
     list-style-type: none;
-  }
+}
+ footer {
+     text-align: center;
+     padding: 1em;
+     background:
+        linear-gradient( to top right,
+        rgba(118, 225, 229, 0),
+        rgba(118, 225, 229, 0),
+        rgba(118, 225, 229, 0),
+        rgba(118, 225, 229, 1)),
+        linear-gradient( to left,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(43, 42, 64, 1),
+        rgba(43, 42, 64, 1),
+        rgba(43, 42, 64, 1),
+        rgba(43, 42, 64, 1));
+     color:rgba(118, 225, 229, 1);
+     box-shadow: rgba(0, 0, 0, 0.7) 8px -10px 5px;
+ }
+
+ footer a {
+     text-decoration: none;
+     color: rgba(118, 225, 229, 1);
+ }
+ footer a:hover {
+     color: white;
+ }
+
+.news-container {
+    padding: 5px;
+}
+.news1 {
+    background: lightgrey;
+    margin: 5px;
+    border: 2px black solid;
+}
+.news1 h3, h2, p{
+    margin: 5px;
+    padding: 5px;
+}
+.news1 p {
+    text-align: justify;
+}
+.news1 footer {
+    background: black;
+    color: white;
+    margin: 0px;
+}
+.news-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
