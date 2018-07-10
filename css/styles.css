@@ -133,13 +133,19 @@ header {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.534) 5px 5px 5px;
 }
+
+.rapsheet {
+    background-color: rgba(118, 225, 229, .8);
+}
+
 .perp-details {
     padding: .5em;
 }
 
 ul {
-    list-style-type: none;
-}
+    list-style-type: bullets ;
+  }
+
  footer {
      text-align: center;
      padding: 1em;
