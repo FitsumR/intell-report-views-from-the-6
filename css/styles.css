@@ -93,3 +93,28 @@ h2 {
 ul {
     list-style-type: none;
   }
+.news-container {
+    padding: 5px;
+}
+.news1 {
+    background: lightgrey;
+    margin: 5px;
+    border: 2px black solid;
+}
+.news1 h3, h2, p{
+    margin: 5px;
+    padding: 5px;
+}
+.news1 p {
+    text-align: justify;
+}
+.news1 footer {
+    background: black;
+    color: white;
+    margin: 0px;
+}
+.news-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
