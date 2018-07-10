@@ -186,7 +186,7 @@ nav a:hover {
     padding: .6em;
     color: rgba(118, 225, 229, 1);
     border-radius: 5px;
-    text-shadow: ;
+    text-shadow: black 1px 1px;
 }
 .index-ul li {
     list-style-type: square;
