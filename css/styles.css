@@ -175,7 +175,9 @@ ul {
  }
 
 .news-container {
+    height: 50em;
     padding: 5px;
+    overflow-y:auto;
 }
 .news1 {
     background: lightgrey;
