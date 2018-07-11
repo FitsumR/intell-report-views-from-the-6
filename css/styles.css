@@ -13,12 +13,11 @@ body {
 }
 
 .wrapper {
-    
 	background: radial-gradient( rgba(43, 42, 64, 1), rgba(118, 225, 229, 1));
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 40s linear infinite alternate;
-	-moz-animation: Gradient 40s linear infinite alternate;
-	animation: Gradient 40s linear infinite alternate;
+	-webkit-animation: Gradient 35s linear infinite alternate;
+	-moz-animation: Gradient 35s linear infinite alternate;
+	animation: Gradient 35s linear infinite alternate;
 }
 
 @-webkit-keyframes Gradient {
@@ -89,9 +88,8 @@ header {
         url(../images/header-img.jpg) no-repeat left;
     background-size: contain;  
     padding: .4em;
-    margin: .5em;
-    box-shadow: rgba(0, 0, 0, .7) 10px 10px 5px;
-    border-radius: 10px;
+    margin-bottom: .5em;
+    box-shadow: rgba(0, 0, 0, .7) 0px 10px 5px;
 }
 
 .page-title {
@@ -131,8 +129,21 @@ header {
 
 .flex-item img {
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.534) 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 5px;
+    padding: 1em;
+    background: 
+        linear-gradient( 
+            to left, 
+            black, 
+            black, 
+            rgba(118, 225, 229, 1),
+            black, 
+            black);
+	background-size: 200% 200%;
+    animation: Gradient 10s linear infinite alternate;
+    margin-bottom: 1em;
 }
+
 nav {
     display: flex;
     flex-direction: row;
@@ -142,7 +153,9 @@ nav {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.9) 5px 5px 5px;
     margin: .3em;
+    margin-bottom: .5em;
 }
+
 nav a {
     text-decoration: none;
     text-shadow: black .5px .5px;
@@ -157,6 +170,7 @@ nav a {
     display: block;
     border-radius: 5px;
 }
+
 nav a:hover {
     color: rgba(43, 42, 64, 1);
     background:
@@ -165,101 +179,147 @@ nav a:hover {
             rgba(118, 225, 229, .5),
             rgba(118, 225, 229, 1)
             );
+    box-shadow: black 3px 3px 3px;
 }
+
 .rapsheet {
     background-color: rgba(118, 225, 229, .8);
 }
 
 .perp-details {
-    padding: .5em;
+    padding: 5px;
+    overflow-y: auto;
+    height: 35.5em;
+    width: 100%;
 }
+
 .perp-details h3 {
     font-size: 2em;
     text-align: center;
+    color: rgba(43, 42, 64, 1);
+    text-shadow: black 1px 1px;
 }
+
 .perp-details h4 {
     font-size: 1.3em;
     margin-bottom: 0;
+    margin-right: .2em;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 5px;
+    background: 
+        linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0.4)
+            );
+    color: rgba(43, 42, 64, 1);
+    border-left: solid black .8em;
+    padding-left: .2em;
 }
-.index-ul {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+
+.index-ul, .perp-details p {
+    background: 
+        linear-gradient(
+            to left, 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0.9)
+            );
     padding: .6em;
     color: rgba(118, 225, 229, 1);
     border-radius: 5px;
     text-shadow: black 1px 1px;
+    box-shadow: black 5px 5px 5px;
+    margin-right: .2em;
 }
+
+.perp-details p {
+    margin-top: .8em;
+}
+
 .index-ul li {
     list-style-type: square;
-    list-style-position: inside;
-    
+    list-style-position: inside;    
 }
 
 ul {
     list-style-type: bullets;
 }
+
 .main-footer {
      text-align: center;
      padding: 1em;
      background:
-        linear-gradient( to top right,
-        rgba(118, 225, 229, 0),
-        rgba(118, 225, 229, 0),
-        rgba(118, 225, 229, 0),
-        rgba(118, 225, 229, 1)),
-        linear-gradient( to left,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(43, 42, 64, 1),
-        rgba(43, 42, 64, 1),
-        rgba(43, 42, 64, 1),
-        rgba(43, 42, 64, 1));
+        linear-gradient( 
+            to top right,
+          rgba(118, 225, 229, 0),
+          rgba(118, 225, 229, 0),
+          rgba(118, 225, 229, 0),
+          rgba(118, 225, 229, 1)
+          ),
+        linear-gradient( 
+            to left,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1),
+          rgba(43, 42, 64, 1),
+          rgba(43, 42, 64, 1),
+          rgba(43, 42, 64, 1),
+          rgba(43, 42, 64, 1)
+          );
      color:rgba(118, 225, 229, 1);
-     box-shadow: rgba(0, 0, 0, 0.7) 8px -10px 5px;
+     box-shadow: rgba(0, 0, 0, 0.6) -1px -10px 5px;
+     margin-top: 2em;
  }
 
 .main-footer a {
      text-decoration: none;
      color: rgba(118, 225, 229, 1);
  }
+
 .main-footer a:hover {
      color: white;
  }
 
- .news-container {
+.news-container {
     height: 50em;
     padding: 5px;
-    overflow-y:auto;
+    overflow-y: auto;
 }
+
 .news1 {
     background: lightgrey;
     margin: 5px;
     border: 2px black solid;
 }
+
 .news1 h3, h2, p{
     margin: 5px;
     padding: 5px;
 }
+
 .news1 p {
     text-align: justify;
 }
+
 .news1 > footer {
     background: black;
     color: white;
     margin: 0px;
 }
+
 .news-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .rap {
     text-align: center;
     padding: 0 auto;
+    margin-top: 1em;
 }
 
 .rap li {
     text-align: left;
-
 }
 
 .rap h3 {
@@ -275,12 +335,157 @@ ul {
     margin-top: .2em;
     box-shadow: black 5px 5px 5px;
 }
+
 .finance1 {
     background: rgb(165, 196, 140);
     margin: 20px;
     padding: 20px;
     border: 2px black solid;
 }
-.new-stuff {
-    color: white;
+
+form {
+    max-width: 85%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgba(118, 225, 229, 1);
+    box-shadow: black 15px 15px 10px;
+    background: 
+        linear-gradient(
+            to left, 
+            rgba(43, 42, 64, .5), 
+            rgba(43, 42, 64, 1)
+            );
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: black 2px 2px;
 }
+  
+#update-dossier {
+    text-align: center;
+    text-shadow: black 2px 2px;
+    font-size: 2.5em;
+    color: rgba(118, 225, 229, 1);
+}
+  
+legend {
+    text-shadow: black 2px 2px;
+}
+  
+.dossier-button {
+    padding: 19px 39px 18px 39px;
+    color: rgba(118, 225, 229, 1);
+    background: 
+        linear-gradient(
+            to top,
+          rgba(118, 225, 229, 1),
+          rgba(43, 42, 64, .9),
+          rgba(43, 42, 64, .6),
+          rgba(0, 0, 0, 1)
+        );
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black; 
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-shadow: black 2px 2px;
+    box-shadow: black 5px 5px 5px;
+    cursor: pointer;
+}
+
+.dossier-button:hover {
+    background: 
+        linear-gradient(
+            to bottom,
+          rgba(118, 225, 229, 1),
+          rgba(43, 42, 64, .9),
+          rgba(43, 42, 64, .6),
+          rgba(0, 0, 0, 1)
+        );
+}
+
+fieldset {
+    border: none;
+}
+  
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+    padding: .5em;
+    margin: .4em auto;
+    box-sizing: border-box;
+    font-size: 1em;
+    box-shadow: black 5px 5px 5px;
+    background: 
+        linear-gradient(
+            to left, 
+            rgba(0, 0, 26, 0), 
+            black, 
+            black
+        );
+    outline: none;
+    color: rgba(118, 225, 229, 1);
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 100px;
+    box-shadow: black 5px 5px 5px;
+    color: rgba(118, 225, 229, 1);
+    background: 
+        linear-gradient(
+            to bottom right,
+          black,
+          black,
+          black,
+          black,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0)
+        );
+    outline: none;
+    resize: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  background-color: black;
+  color: rgba(118, 225, 229, 1);
+}
+
+select {
+  padding: 1em;
+  height: 2em;
+  border-radius: 5px;
+  width: 70%;
+  background: linear-gradient(to left, rgba(0, 0, 26, 0), black, black);
+  color: rgba(118, 225, 229, 1);
+}
+
+label {
+    display: block;
+    margin-bottom: .6em;
+    margin-top: .6em;
+}
+
+.inline {
+    display: inline;
+}
+  

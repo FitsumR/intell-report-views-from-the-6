@@ -68,6 +68,61 @@
                         </nav>
                     </div>
 
+                    <form action="index.html" method="post">
+
+                        <h1 id="update-dossier">Update Dossier</h1>
+
+                        <fieldset>
+
+                            <legend>Credentials:</legend>
+
+
+                            <input type="text" id="username" name="user_name" placeholder="Username">
+                            <br>
+
+                            <input type="password" id="password" name="user_password" placeholder="Password">
+                            <br>
+
+                            <input type="email" id="mail" name="user_email" placeholder="Email">
+                            <br>
+                            <input type="radio" name="job" value="agent" checked>Field Agent
+                            <input type="radio" name="job" value="tech">Tech
+                            <br>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="changes">Information Type:</label>
+                            <select id="changes" name="user_changes">
+                                <optgroup label="Primary Information">
+                                    <option value "add_alias">Alias</option>
+                                    <option value "add_known_associate">Known Associates</option>
+                                    <option value "add_rumored_sighting">Rumored Sighting</option>
+                                </optgroup>
+                                <optgroup label="Dossier Content">
+                                    <option value "news_update">Relevant News Headline</option>
+                                    <option value "rapsheet_update">Rapsheet Extension</option>
+                                    <option value "finance_update">Financial Reporting</option>
+                                </optgroup>
+                            </select>
+                            <textarea id="details" name="detail_addition" placeholder="Input New Information"></textarea>
+
+                            <label>Quality Control:</label>
+                            <input type="checkbox" id="verified" value "verified" name="quality_control">
+                            <label class="inline" for="verified">Verified</label>
+                            <br>
+                            <input type="checkbox" id="reviewed" value "reviewed" name="quality_control">
+                            <label class="inline" for="reviewed">Reviewed</label>
+                            <br>
+                            <input type="checkbox" id="source" value "source" name="quality_control">
+                            <label class="inline" for="source">Source Provided</label>
+
+                        </fieldset>
+
+                        <button type="submit" class="dossier-button">Update Dossier</button>
+
+                    </form>
+
                 </div>
             </div>
         </main>
