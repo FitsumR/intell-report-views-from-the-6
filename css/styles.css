@@ -373,7 +373,7 @@ legend {
   
 .dossier-button {
     padding: 19px 39px 18px 39px;
-    color: #fff;
+    color: rgba(118, 225, 229, 1);
     background: 
         linear-gradient(
             to top,
@@ -392,8 +392,19 @@ legend {
     margin-bottom: 15px;
     margin-top: 15px;
     text-shadow: black 2px 2px;
-    box-shadow: black 10px 10px 5px;
+    box-shadow: black 5px 5px 5px;
     cursor: pointer;
+}
+
+.dossier-button:hover {
+    background: 
+        linear-gradient(
+            to bottom,
+          rgba(118, 225, 229, 1),
+          rgba(43, 42, 64, .9),
+          rgba(43, 42, 64, .6),
+          rgba(0, 0, 0, 1)
+        );
 }
 
 fieldset {
